@@ -31,8 +31,7 @@
           <p>{{ lastModified }}</p>
         </div>
       </div>
-      
-      <!-- Full-width graph section -->
+
       <div class="graph-section">
         <h3>Graphique des Ressources</h3>
         <canvas id="resourcesChart"></canvas>
@@ -189,7 +188,7 @@ export default {
       showStats: true,
       selectedTags: [],
       lastModified: localStorage.getItem('lastModified') || 'Aucune modification',
-      chartInstance: null // Référence à l'instance du graphique
+      chartInstance: null
     };
   },
   computed: {
@@ -309,7 +308,7 @@ export default {
       this.lastModified = new Date().toLocaleString();
       this.sauvegarderRessources();
       this.reinitialiserFormulaire();
-      this.updateChart(); // Mise à jour du graphique après ajout ou mise à jour
+      this.updateChart(); 
     },
     confirmerSuppression(index) {
       if (confirm("Êtes-vous sûr de vouloir supprimer cette ressource ?")) {
@@ -320,7 +319,7 @@ export default {
       this.ressources.splice(index, 1);
       this.sauvegarderRessources();
       this.afficherToast("Ressource supprimée", "warning");
-      this.updateChart(); // Mise à jour du graphique après suppression
+      this.updateChart(); 
     },
     editerRessource(index) {
       this.nouvelleRessource = { ...this.ressources[index] };
