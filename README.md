@@ -1,7 +1,3 @@
-Voici un README détaillé pour le code de votre application Vue.js de gestion des ressources.
-
----
-
 # Application de Gestion des Ressources
 
 Cette application Vue.js permet aux utilisateurs de gérer une liste de ressources (livres, articles, vidéos, etc.). Elle offre des fonctionnalités de filtrage, de recherche, de tri, de pagination et de thèmes clairs et sombres.
@@ -51,7 +47,7 @@ Chaque ressource est un objet contenant les propriétés suivantes :
 1. **Clonez ce dépôt** :
    ```bash
    git clone https://github.com/ilyeshr2/Ressources.js
-   cd gestion-ressources
+   cd Ressources.js
    ```
 
 2. **Installez les dépendances** :
