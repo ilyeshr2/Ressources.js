@@ -47,7 +47,7 @@ Chaque ressource est un objet contenant les propriétés suivantes :
 1. **Clonez ce dépôt** :
    ```bash
    git clone https://github.com/ilyeshr2/Ressources.js
-   cd gestion-ressources
+   cd Ressources.js
    ```
 
 2. **Installez les dépendances** :
